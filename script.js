@@ -35,8 +35,10 @@ let app = new Vue(
        methods: {
         itemDone: function (index) {
            this.todos[index].done = !this.todos[index].done;
-           }
-        }
-       }
-    
+           },
+        removeItem: function (index) {
+            this.todos.splice(index, 1);
+            }
+        },
+    }
 )

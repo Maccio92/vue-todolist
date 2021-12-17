@@ -14,7 +14,6 @@
         <div class="container">
             <header class="header">
                 <h1>To Do List</h1>
-                <h3>Data</h3>
             </header>
             <main id="app">
                 <div class="add">
@@ -25,7 +24,10 @@
                     <ul>
                         <li v-for="(element, index) in todos">
                             <h2 :class="(element.done) ? 'checked' : ''">{{ element.text }}</h2>
-                            <i @click="itemDone(index)" class="fas fa-check-circle"></i>
+                            <div>
+                                <i @click="itemDone(index)" class="fas fa-check-circle green"></i>
+                                <i @click="removeItem(index)" class="fas fa-times-circle remove-icon"></i>
+                            </div>
                         </li>
                     </ul>
                 </div>
