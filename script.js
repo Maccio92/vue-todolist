@@ -17,6 +17,7 @@ let app = new Vue(
     {
     el: '#app',
        data: {
+           newItem: "",
            todos:[
             {
                 text: 'Svegliarsi',
@@ -38,7 +39,15 @@ let app = new Vue(
            },
         removeItem: function (index) {
             this.todos.splice(index, 1);
-            }
-        },
+            },
+        addItem: function () {
+            let obj = {
+                text: this.newItem ,
+                done: false,
+        }
+        this.todos.unshift(obj);
+        this.newItem = ''
     }
+    }
+}
 )
