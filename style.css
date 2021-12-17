@@ -40,7 +40,8 @@ li{
     display: flex;   
     align-items: center;
     justify-content: space-between;
-    padding: 1em 0;
+    padding: 1em 0.5em;
+    background-image: linear-gradient( #b5ff8a, #ffffff 50%,#b5ff8a) ;
 }
 .checked{
     text-decoration: line-through;
