@@ -12,8 +12,24 @@
 <body>
     <div class="main-container">
         <div class="container">
-            <header></header>
-            <main></main>
+            <header class="header">
+                <h1>To Do List</h1>
+                <h3>Data</h3>
+            </header>
+            <main id="app">
+                <div class="add">
+                    <input type="text" placeholder="Add Item">
+                    <i class="fas fa-plus-circle"></i>
+                </div>
+                <div class="todos">
+                    <ul>
+                        <li v-for="(element, index) in todos">
+                            <h2 :class="(element.done) ? 'checked' : ''">{{ element.text }}</h2>
+                            <i @click="itemDone(index)" class="fas fa-check-circle"></i>
+                        </li>
+                    </ul>
+                </div>
+            </main>
         </div>
     <script src="script.js"></script>
 </body>
