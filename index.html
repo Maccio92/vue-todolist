@@ -17,7 +17,7 @@
             </header>
             <main id="app">
                 <div class="add">
-                    <input v-model="newItem" type="text" placeholder="Add Item">
+                    <input @keyup.enter="addItem" v-model="newItem" class="text" placeholder=" Aggiungi un elemento alla lista">
                     <i @click="addItem" class="fas fa-plus-circle"></i>
                 </div>
                 <div class="todos">

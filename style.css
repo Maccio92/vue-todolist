@@ -15,10 +15,17 @@
     height: 80%;
     background-color: white;
     margin: auto;
+    overflow: auto;
+    border-radius: 20px;
 }
 .header{
     padding: 1em 3em;
     background-color: green;
+}
+.text{
+    border-radius: 20px;
+    width: 30%;
+    height: 30px;
 }
 .add{
     padding: 1em 3em;
@@ -26,14 +33,14 @@
     text-align: center;
 }
 ul{
-list-style-type: none;
-padding: 3em;
+    list-style-type: none;
+    padding: 3em;
 }
 li{
- display: flex;   
- align-items: center;
- justify-content: space-between;
- padding: 1em 0;
+    display: flex;   
+    align-items: center;
+    justify-content: space-between;
+    padding: 1em 0;
 }
 .checked{
     text-decoration: line-through;
@@ -43,4 +50,11 @@ li{
 }
 .green{
     color: green;
+}
+.fa-plus-circle{
+    font-size: 2em;
+    vertical-align: middle;
+}
+.fa-plus-circle:hover, .fa-check-circle:hover, .fa-times-circle:hover{
+    cursor: pointer;
 }

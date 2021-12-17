@@ -26,11 +26,11 @@ let app = new Vue(
            {
             text: 'Non sclerare quando ti alzi',
             done: false,
-       },
-       {
-        text: 'Bevi una brocca di caffe',
-        done: false,
-   },
+            },
+            {
+            text: 'Bevi una brocca di caffe',
+            done: false,
+            },
            ]
        },
        methods: {
